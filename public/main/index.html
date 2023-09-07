@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>QuickView</title>
+
+  <!--Link for Google fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!-- My Style Sheet -->
+  <link rel="stylesheet" href="main/styles.css">
+
+  <!-- Font Awesome link -->
+  <script src="https://kit.fontawesome.com/8e6c28f24c.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <section class="white-section" id="title">
+
+    <!-- Nav Bar -->
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-7">
+
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="">
+              <i class="fa-solid fa-location-dot"></i>
+              QuickView
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportContent">
+              <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                  <a class="nav-link active" href="#footer">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#cta">Download</a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+
+          <!-- Title -->
+
+          <div>
+            <h1 class="title-h1">Know the weather of your favourite city.</h1>
+
+            <form class="cityName" action="/" method="post">
+              <input class="title-input" type="text" name="name" placeholder="Enter the name of your city" size="30">
+              <button class="title-button" type="submit" name="submit">Find</button>
+            </form>
+
+            <h3 class="title-h3">POPULAR CITIES</h3>
+            <p class="title-p">London Tokyo Paris Shanghai Bangkok Mumbai Dubai Vienna Singapore Delhi Amsterdam & more.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-5 img-cloud">
+            <img class="cloud" src="Image/3.jpg" alt="weather-img">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="colored-section" id="features">
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-circle-check fa-4x"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, anyone can use it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-circle-info fa-4x"></i>
+          <h3>Valid Information</h3>
+          <p>Know the precise Weather report.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fa-solid fa-heart fa-4x"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the weather condition of your city.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2>A Plan for Every One</h2>
+    <p>Simple and affordable price plans for you.</p>
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Free</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>Current Weather</p>
+            <p>Weather Dashboard</p>
+            <p>Uptime 95%</p>
+            <div class="d-grid gap-2">
+              <button onclick="signup()" type="button" class="btn btn-lg btn-outline-dark">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Professional</h3>
+          </div>
+          <div class="card-body">
+            <h2>$ 11 / yr</h2>
+            <p>Monthly Notification</p>
+            <p>Current Weather</p>
+            <p>Weather Dashboard</p>
+            <p>Uptime 99.5%</p>
+            <div class="d-grid gap-2">
+              <button onclick="signup()" type="button" class="btn btn-lg btn-dark">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Enterprise</h3>
+          </div>
+          <div class="card-body">
+            <h2>$ 19 / yr</h2>
+            <p>Daily Notification</p>
+            <p>Current Weather</p>
+            <p>Weather Dashboard</p>
+            <p>Uptime 99.9%</p>
+            <div class="d-grid gap-2">
+              <button onclick="signup()" type="button" class="btn btn-lg btn-dark">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <h3 class="cta-text">Find the Weather Report of Your City Today.</h3>
+
+    <button onclick="appleStore()" type="button" class="btn btn-dark btn-lg cta-button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button onclick="playStore()" type="button" class="btn btn-light btn-lg cta-button"><i class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <i class="contact fa-brands fa-twitter footer-icon"></i>
+    <i class="contact fa-brands fa-facebook-f footer-icon"></i>
+    <i class="contact fa-brands fa-instagram footer-icon"></i>
+    <i class="contact fa-solid fa-envelope footer-icon"></i>
+    <p>© Copyright QuickView</p>
+
+  </footer>
+
+
+<script src="main/script.js" charset="utf-8"></script>
+</body>
+
+</html>

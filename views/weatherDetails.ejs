@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="weatherDetails/styles.css">
+  </head>
+  <body>
+
+    <div class="card">
+      <h2 class="city">Weather in <%= cityName %> </h2>
+      <img class="image" src= <%= imgUrl %> alt="Cloud Image">
+      <h1 class="temperature"> <%= temp %> &degC</h1>
+      <p class="description"> <%= des %> </p>
+      <p class="humidity"> Humidity: <%= hum %>%</p>
+      <p class="windSpeed"> Wind speed: <%= speed %> m/s</p>
+      <p class="pressure"> Pressure: <%= press %> hpa</p>
+
+      <div class="line"></div>
+
+      <% const hotelLink = "https://www.oyorooms.com/hotels-in-" + cityName %>
+      <% const foodLink = "https://www.zomato.com/" + cityName %>
+
+      <% if (des === "Clear sky") { %>
+        <p>Nice weather to plan a trip.</p>
+        <p>Book your hotel online
+          <a href= <%= hotelLink %> >OYO Rooms</a>
+        </p>
+      <% } else { %>
+
+        <p>Nice weather to order food.</p>
+        <p>Order your food from the best restaurants near you.
+          <a href= <%= foodLink %> >Zomato</a>
+        </p>
+      <% } %>
+    </div>
+
+  </body>
+</html>

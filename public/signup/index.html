@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <!--Link for Google fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- My Style Sheet -->
+  <link rel="stylesheet" href="/signup/styles.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>Sign Up</header>
+    <p>It's quick and easy.</p>
+
+    <div class="line"></div>
+
+    <form action="/signup" method="post">
+      <div class="field">
+        <input type="first name" placeholder="First name" class="fname" name="fname">
+      </div>
+
+      <div class="field">
+        <input type="last name" placeholder="Last name" class="lname" name="lname">
+      </div>
+
+      <div class="field">
+        <input type="email" placeholder="Email" class="email" name="email">
+      </div>
+
+      <div class="field">
+        <button type="submit" name="button" onclick="redirectToHome()">Sign Up</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
